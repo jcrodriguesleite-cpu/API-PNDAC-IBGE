@@ -5,4 +5,4 @@ ext = Extract()
 data = ext.pnadc()
 
 ld = Load()
-ld.load_json("pnadc", data)
+ld.insert_in_mongo(data, "IBGE", "pnadc")
